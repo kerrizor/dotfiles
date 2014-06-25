@@ -1,0 +1,46 @@
+[alias]
+  ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+  ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+  lds = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
+  ld = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative
+  graph = log --pretty=oneline --abbrev-commit --graph --decorate
+  la = "!git config -l | grep alias | cut -c 7-"
+  cp = cherry-pick
+  st = status -s
+  cl = clone
+  ci = commit
+  co = checkout
+  br = branch
+  diff = diff --word-diff
+  dc = diff --cached
+[color]
+  ui = true
+[color "diff"]
+  meta       = yellow bold
+  frag       = magenta bold
+  old        = red reverse
+  new        = green reverse
+  whitespace = white reverse
+[color "branch"]
+  current = green reverse
+  local   = yellow
+  remote  = magenta
+[user]
+	name = Kerri Miller
+	email = kerri.miller@livingsocial.com
+[core]
+  autocrlf = input
+  editor = vim
+	excludesfile = /Users/kerrimiller/.gitignore_global
+[merge]
+  tool = opendiff
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[rerere]
+	enabled = true
+[pull]
+	rebase = true
