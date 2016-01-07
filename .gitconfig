@@ -28,7 +28,11 @@
   remote  = magenta
 [user]
 	name = Kerri Miller
-	email = kerri.miller@livingsocial.com
+	email = kerrizor@github.com
+[github]
+  user = kerrizor
+[credential]
+  helper = osxkeychain
 [core]
   autocrlf = input
   editor = vim
@@ -45,3 +49,5 @@
 	enabled = true
 [pull]
 	rebase = true
+[default]
+  default = simple
