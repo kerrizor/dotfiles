@@ -15,7 +15,7 @@ let mapleader = ","
 let g:mapleader = ","
 
 " Basic setup for pathogen
-call pathogen#infect('../.vim.local/bundle/{}', 'bundle/{}')
+"call pathogen#infect('../.vim.local/bundle/{}', 'bundle/{}')
 syntax on
 filetype plugin indent on
 
@@ -63,7 +63,7 @@ set cmdheight=1 "The commandbar height
 set hid "Change buffer without saving
 set backspace=eol,start,indent
 set whichwrap+=<,>,h,l
-set ignorecase " Ignore case when searching 
+set ignorecase " Ignore case when searching
 set smartcase " Ignore case when searching lowercase
 set hlsearch  " highlight search
 set incsearch  " incremental search, search as you type
@@ -108,10 +108,10 @@ endif
 set t_Co=256
 set background=dark
 " solarized options
-let g:solarized_visibility = "high"
-let g:solarized_contrast = "high"
-let g:solarized_termcolors=256
-colorscheme solarized
+"let g:solarized_visibility = "high"
+"let g:solarized_contrast = "high"
+"let g:solarized_termcolors=256
+"colorscheme solarized
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -191,7 +191,7 @@ function! <SID>BufcloseCloseIt()
   endif
 endfunction
 
-" Specify the behavior when switching between buffers 
+" Specify the behavior when switching between buffers
 try
   set switchbuf=usetab
   set stal=1
