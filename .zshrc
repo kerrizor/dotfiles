@@ -21,6 +21,9 @@ BULLETTRAIN_DIR_EXTENDED=2
 BULLETTRAIN_DIR_BG=213
 BULLETTRAIN_DIR_FG=233
 
+BULLETTRAIN_GIT_COLORIZE_DIRTY=true
+# BULLETTRAIN_GIT_COLORIZE_DIRTY_COLOR=orange
+
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
@@ -58,7 +61,9 @@ plugins=(git rails ruby brew colored-man nyan rake)
 
 
 # Customize to your needs...
-export PATH=/usr/local/bin:$PATH:/bin:/usr/sbin:/sbin:/usr/bin
+GOPATH="$HOME/.go/"
+
+export PATH=/usr/local/bin:$PATH:/bin:/usr/sbin:/sbin:/usr/bin:$HOME/.go/bin
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
