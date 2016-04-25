@@ -61,9 +61,9 @@ plugins=(git rails ruby brew colored-man nyan rake)
 
 
 # Customize to your needs...
-GOPATH="$HOME/.go/"
+export GOPATH="$HOME/.go"
 
-export PATH=/usr/local/bin:$PATH:/bin:/usr/sbin:/sbin:/usr/bin:$HOME/.go/bin
+export PATH=/usr/local/bin:$PATH:/bin:/usr/sbin:/sbin:/usr/bin:$GOPATH/bin
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
@@ -90,4 +90,4 @@ alias tmux="TERM=screen-256color-bce tmux"
 # add local bin to cover for GH specialized tools
 ponysay -q
 
-PATH=./bin:$PATH
+export PATH=./bin:$PATH
