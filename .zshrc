@@ -14,14 +14,16 @@ ZSH_THEME="bullet-train"
 # spectrum_ls for color codes (!)
 BULLETTRAIN_PROMPT_CHAR="➜"
 
-# BULLETTRAIN_RUBY_BG=165 #52
-BULLETTRAIN_RUBY_FG=252
+# BULLETTRAIN_RUBY_FG=165 #52
+# BULLETTRAIN_RUBY_BG=237
+# BULLETTRAIN_RUBY_FG=252
+BULLETTRAIN_RUBY_SHOW=false
 BULLETTRAIN_TIME_BG=237
 BULLETTRAIN_TIME_FG=248
 
 BULLETTRAIN_DIR_EXTENDED=2
-BULLETTRAIN_DIR_BG=213
-BULLETTRAIN_DIR_FG=233
+BULLETTRAIN_DIR_BG=118
+BULLETTRAIN_DIR_FG=022
 
 BULLETTRAIN_GIT_COLORIZE_DIRTY=true
 # BULLETTRAIN_GIT_COLORIZE_DIRTY_COLOR=orange
@@ -89,7 +91,7 @@ alias mongo_start='brew services start mongodb'
 alias mongo_stop='brew services stop mongodb'
 alias tmux="TERM=screen-256color-bce tmux"
 
+export PATH=./bin:$PATH
+
 # add local bin to cover for GH specialized tools
 ponysay -q
-
-export PATH=./bin:$PATH
