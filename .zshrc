@@ -8,6 +8,8 @@ ZSH=$HOME/.oh-my-zsh
 # ZSH_THEME="kiva"
 ZSH_THEME="bullet-train"
 
+#for code ({000..255}) { print -nP -- "$code: %F{$code}%K{$code}Test%k%f " ; (( code % 8 && code < 255 )) || printf '\n'}
+
 # bullet-train theme color options
 # spectrum_ls for color codes (!)
 BULLETTRAIN_PROMPT_CHAR="➜"
