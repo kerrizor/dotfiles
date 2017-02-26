@@ -65,7 +65,7 @@ plugins=(git rails ruby brew colored-man nyan rake)
 
 
 # Customize to your needs...
-export GOPATH="$HOME/.go"
+export GOPATH="$HOME/gopath"
 
 export PATH=/usr/local/bin:$PATH:/bin:/usr/sbin:/sbin:/usr/bin:$GOPATH/bin
 
