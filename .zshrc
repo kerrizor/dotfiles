@@ -68,7 +68,7 @@ plugins=(git rails ruby brew colored-man nyan rake)
 
 # Go via homebrew
 export GOROOT=/usr/local/opt/go/libexec
-export GOPATH=$HOME/.go
+export GOPATH=$HOME/projects/go
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
 export PATH=/usr/local/bin:$PATH:/bin:/usr/sbin:/sbin:/usr/bin:$GOPATH/bin
