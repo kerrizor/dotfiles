@@ -19,6 +19,8 @@
 --ignore-dir=vendor/
 
 --ignore-file=ext:js
+--ignore-file=ext:map
+--ignore-file=ext:svg
 --ignore-file=ext:css
 --ignore-file=match:profile_fuzzy.html
 
