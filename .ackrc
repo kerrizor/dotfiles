@@ -24,6 +24,7 @@
 --ignore-file=ext:svg
 --ignore-file=ext:css
 --ignore-file=match:profile_fuzzy.html
+--ignore-file=match:codequality.json
 
 #make sure ack knows how to search common filetypes used in rails projects
 --type-add=css=scss
