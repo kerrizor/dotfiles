@@ -18,18 +18,19 @@
   copr = "!f() { git fetch -fu origin refs/pull/$1/head:pr-$1; git checkout pr-$1; } ; f"
   prunepr = "!git for-each-ref refs/heads/pr-* --format='%(refname:short)' | while read ref ; do git branch -D $ref ; done"
 [color]
-  ui = true
+	ui = true
 [color "diff"]
-  meta       = yellow bold
-  frag       = magenta bold
-  old        = red reverse
-  new        = green reverse
-  whitespace = white reverse
+	meta = 11
+	frag = magenta bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+	commit = yellow bold
 [color "diff-highlight"]
-  oldNormal    = red bold
-  oldHighlight = "red bold 52"
-  newNormal    = "green bold"
-  newHighlight = "green bold 22"
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
 [color "branch"]
   current = green reverse
   local   = yellow
@@ -45,6 +46,7 @@
   autocrlf = input
   editor = vim
 	excludesfile = /Users/kerrimiller/.gitignore_global
+	pager = diff-so-fancy | less --tabs=4 -RFX
 [merge]
   tool = opendiff
 [difftool "sourcetree"]
