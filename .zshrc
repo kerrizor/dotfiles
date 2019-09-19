@@ -94,8 +94,29 @@ alias dc='cd ~/projects/daily-curriculum'
 alias mongo_start='brew services start mongodb'
 alias mongo_stop='brew services stop mongodb'
 alias tmux="TERM=screen-256color-bce tmux"
+alias bell="afplay /System/Library/Sounds/Hero.aiff"
 
 export PATH=./bin:$PATH
 
 # add local bin to cover for GH specialized tools
+#
 ponysay -q
+export PATH="/usr/local/opt/qt/bin:$PATH"
+export PATH="$(brew --prefix qt@5.5)/bin:$PATH"
+
+# part of the GDK setup
+#
+export PATH="/usr/local/opt/postgresql@9.6/bin:/usr/local/opt/node@10/bin:$PATH"
+export PKG_CONFIG_PATH="/usr/local/opt/icu4c/lib/pkgconfig:$PKG_CONFIG_PATH"
+
+# added by travis gem
+[ -f /Users/kerrizor/.travis/travis.sh ] && source /Users/kerrizor/.travis/travis.sh
+
+# trvs
+#
+eval "$(/Users/kerrizor/projects/travis/trvs/bin/trvs init -)"
+
+source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
+source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
+
+eval "$(direnv hook zsh)"
