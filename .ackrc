@@ -17,6 +17,7 @@
 --ignore-dir=log/
 --ignore-dir=node_modules/
 --ignore-dir=vendor/
+--ignore-dir=tmp/
 
 --ignore-file=ext:js
 --ignore-file=ext:map
